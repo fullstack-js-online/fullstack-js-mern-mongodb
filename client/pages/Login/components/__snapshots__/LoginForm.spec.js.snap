@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LoginForm form should match snapshot 1`] = `
+<Fragment>
+  <div
+    className="container mx-auto flex justify-center"
+  >
+    <div
+      className="max-w-md-1/2 mx-3 my-12 w-full"
+    >
+      <h1
+        className="text-center font-primary font-semibold text-gold"
+      >
+        Login
+      </h1>
+      <div
+        className="bg-white shadow-md my-12 p-16 rounded w-full"
+      >
+        <Formik
+          enableReinitialize={false}
+          initialValues={
+            Object {
+              "email": "",
+              "password": "",
+            }
+          }
+          isInitialValid={false}
+          onSubmit={[MockFunction]}
+          validateOnBlur={true}
+          validateOnChange={true}
+          validationSchema={Object {}}
+        >
+          <Component />
+        </Formik>
+      </div>
+    </div>
+  </div>
+</Fragment>
+`;

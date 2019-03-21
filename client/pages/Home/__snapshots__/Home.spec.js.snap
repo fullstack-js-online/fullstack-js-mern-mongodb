@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`The Home page should match snapshot 1`] = `
+<HomePage>
+  <HelmetWrapper
+    defer={true}
+    encodeSpecialCharacters={true}
+  >
+    <SideEffect(NullComponent)
+      defer={true}
+      encodeSpecialCharacters={true}
+      title="Fullstack-js Online"
+      titleAttributes={Object {}}
+    >
+      <NullComponent
+        defer={true}
+        encodeSpecialCharacters={true}
+        title="Fullstack-js Online"
+        titleAttributes={Object {}}
+      />
+    </SideEffect(NullComponent)>
+  </HelmetWrapper>
+  <Hero>
+    <div
+      className="w-full h-64 flex items-center justify-center"
+    >
+      <h1
+        className="text-5xl font-bold"
+      >
+        FULLSTACK-JS MERN STARTER
+      </h1>
+    </div>
+  </Hero>
+</HomePage>
+`;

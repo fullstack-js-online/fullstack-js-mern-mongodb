@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`The Textbox component should match snapshot 1`] = `
+<Textbox
+  onChange={[MockFunction]}
+  placeholder="Email"
+  value="john@doe.com"
+>
+  <div
+    className="mb-5"
+  >
+    <input
+      className="focus:outline-none w-full p-6 bg-brown-lightest text-brown"
+      onChange={[MockFunction]}
+      placeholder="Email"
+      value="john@doe.com"
+    />
+  </div>
+</Textbox>
+`;

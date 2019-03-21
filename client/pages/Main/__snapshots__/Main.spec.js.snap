@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Main component should match snapshot 1`] = `
+<BrowserRouter>
+  <div
+    className="page pb-16"
+  >
+    <FlashMessages
+      messages={Array []}
+    />
+    <SendEmailConfirm
+      resendEmailConfirmation={[Function]}
+    />
+    <withRouter(Topbar)
+      isAuthenticated={false}
+      logout={[Function]}
+      user={Object {}}
+    />
+    <Route
+      component={[Function]}
+      path="/"
+    />
+    <Route
+      component={[Function]}
+      path="/auth/login"
+    />
+    <Route
+      component={[Function]}
+      path="/auth/register"
+    />
+    <Route
+      component={[Function]}
+      path="/auth/passwords/reset/:token"
+    />
+    <Route
+      component={[Function]}
+      path="/auth/passwords/email"
+    />
+    <Route
+      component={[Function]}
+      path="/auth/emails/confirm/:token"
+    />
+  </div>
+</BrowserRouter>
+`;

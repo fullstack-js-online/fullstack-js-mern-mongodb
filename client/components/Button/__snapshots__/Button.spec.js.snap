@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`The button component should match snapshot 1`] = `
+<Button
+  loading={true}
+>
+  <button
+    className="focus:outline-none rounded-sm hover:bg-emerald-light px-4 py-5 w-full text-white text-xl bg-emerald"
+    disabled={true}
+    type="button"
+  >
+    <Loader
+      dark={false}
+    >
+      <img
+        className="loader"
+        src="/loading.png"
+      />
+    </Loader>
+  </button>
+</Button>
+`;

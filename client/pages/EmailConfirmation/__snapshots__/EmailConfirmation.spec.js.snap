@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`The EmailConfirmation page should match snapshot 1`] = `
+<EmailConfirmationPage
+  dispatch={[Function]}
+  match={
+    Object {
+      "params": Object {
+        "token": "",
+      },
+    }
+  }
+>
+  <HelmetWrapper
+    defer={true}
+    encodeSpecialCharacters={true}
+  >
+    <SideEffect(NullComponent)
+      defer={true}
+      encodeSpecialCharacters={true}
+      title="Email confirmation"
+      titleAttributes={Object {}}
+    >
+      <NullComponent
+        defer={true}
+        encodeSpecialCharacters={true}
+        title="Email confirmation"
+        titleAttributes={Object {}}
+      />
+    </SideEffect(NullComponent)>
+  </HelmetWrapper>
+  <EmailConfirmationLoader>
+    <h1
+      className="text-center"
+    >
+      Confirming Email ...
+    </h1>
+  </EmailConfirmationLoader>
+</EmailConfirmationPage>
+`;
