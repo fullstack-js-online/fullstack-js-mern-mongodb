@@ -2,7 +2,7 @@ import config from '@config'
 import Bcrypt from 'bcryptjs'
 import jwt from 'jsonwebtoken'
 import mongoose from 'mongoose'
-import Mail from '@server/mails'
+import Mail from '@fullstackjs/mail'
 import randomstring from 'randomstring'
 import PasswordReset from '@models/PasswordReset'
 
@@ -60,10 +60,9 @@ UserSchema.methods.generateToken = function() {
  * @return {Promise}
  */
 UserSchema.methods.sendEmailVerificationEmail = function() {
-  return new Mail()
+  return new Mail('confirm-email')
     .to(this.email)
     .subject('Please confirm your email address.')
-    .template('confirm-email')
     .data({
       name: this.name,
       url: `${config.url}/auth/emails/confirm/${this.emailConfirmCode}`
@@ -94,10 +93,9 @@ UserSchema.methods.forgotPassword = async function() {
  * @return {Promise}
  */
 UserSchema.methods.sendForgotPasswordEmail = async function(token) {
-  await new Mail()
+  await new Mail('forgot-password')
     .to(this.email)
     .subject('You requested for a password reset.')
-    .template('forgot-password')
     .data({
       name: this.name,
       url: `${config.url}/auth/passwords/reset/${token}`

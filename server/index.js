@@ -48,9 +48,9 @@ app.use('/api/v1', v1Router)
 const server = Http.createServer(app)
 
 server.listen(config.port, () => {
-  console.log(
-    Chalk.blue(`💚   Project running on http://localhost:${config.port}`)
-  )
+  console.log(`
+    ${Chalk.blue(`💚   Project running on http://localhost:${config.port}`)}
+  `)
 })
 
 export default server
